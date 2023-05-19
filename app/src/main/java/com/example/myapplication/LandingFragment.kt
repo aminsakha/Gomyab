@@ -13,7 +13,6 @@ import com.example.myapplication.utils.changeFragment
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
-
 class LandingFragment : Fragment() {
     private var _binding: FragmentLandingBinding? = null
     private val binding get() = _binding!!
