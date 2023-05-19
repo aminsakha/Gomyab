@@ -10,4 +10,6 @@
     <color name="mainGreen">#00A693</color>
     <color name="lighterGray">#CCCCCC</color>
     <color name="newGray">#555555</color>
+    <color name="backGray">#1E1E1E</color>
+    <color name="newWhite">#F2F2F2</color>
 </resources>

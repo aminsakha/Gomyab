@@ -46,7 +46,7 @@
 
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/passTV"
+        android:id="@+id/pass2TV"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         app:startIconDrawable="@drawable/baseline_remove_red_eye_24"
