@@ -36,4 +36,8 @@ class SplashFragment : Fragment() {
             changeFragment(binding.textView, R.id.action_splashFragment_to_landingFragment)
         }
     }
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
+    }
 }
