@@ -1,14 +1,129 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginFragment">
+    android:orientation="vertical">
 
-    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        android:src="@drawable/green_logo"/>
+
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:id="@+id/titleTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginEnd="30dp"
+        android:text="ورود"
+        android:fontFamily="@font/sans"
+        android:textColor="@color/newGray"
+        android:textSize="24sp"
+        android:textStyle="bold" />
 
-</FrameLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/userNameTV"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        app:startIconDrawable="@drawable/baseline_account_circle_24"
+        app:endIconMode="custom"
+        android:hint="کد ملی"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sans"
+            android:textSize="16sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/pass2TV"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        app:startIconDrawable="@drawable/baseline_remove_red_eye_24"
+        app:endIconMode="custom"
+        android:hint="رمز عبور"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:inputType="textPassword"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sans"
+            android:textSize="16sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/forgetPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginStart="15dp"
+        android:clickable="true"
+        android:fontFamily="@font/sans"
+        android:backgroundTint="@color/mainGreen"
+        android:background="?attr/selectableItemBackground"
+        android:layout_marginTop="20dp"
+        android:text="رمز عبور خود را فراموش کرده اید؟"
+        android:textColor="@color/mainGreen"
+        android:textSize="18sp" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/loginBTN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="70dp"
+        android:backgroundTint="@color/mainGreen"
+        android:fontFamily="@font/sans"
+        android:padding="6dp"
+        android:text="ورود"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:cornerRadius="20dp" />
+
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/mainGreen"
+        android:layout_gravity="end"
+        android:background="?attr/selectableItemBackground"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="12dp"
+        android:clickable="true"
+        android:text="حساب کاربری ندارید؟"
+        android:fontFamily="@font/sans"
+        android:textColor="#404040"
+        android:textSize="15sp" />
+    <TextView
+        android:id="@+id/t2"
+        android:layout_width="wrap_content"
+        android:clickable="true"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/sans"
+        android:layout_marginEnd="12dp"
+        android:text="عضویت در گمیاب"
+        android:backgroundTint="@color/mainGreen"
+        android:background="?attr/selectableItemBackground"
+        android:textColor="@color/mainGreen"
+        android:textSize="15sp" />
+</LinearLayout>
