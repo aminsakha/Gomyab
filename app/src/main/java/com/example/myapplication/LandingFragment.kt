@@ -31,7 +31,12 @@ class LandingFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
+        binding.loginBTN.setOnClickListener {
+            changeFragment(binding.loginBTN, R.id.action_landingFragment_to_loginFragment)
+        }
+        binding.signUpBTN.setOnClickListener {
+            changeFragment(binding.signUpBTN, R.id.action_landingFragment_to_signUpFragment)
+        }
     }
 
     override fun onDestroyView() {
