@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.example.myapplication.SignUpFragment"
+        android:label="fragment_sign_up"
+        tools:layout="@layout/fragment_sign_up" />
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.myapplication.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" />
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.example.myapplication.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" />
+    <fragment
+        android:id="@+id/landingFragment"
+        android:name="com.example.myapplication.LandingFragment"
+        android:label="fragment_landing"
+        tools:layout="@layout/fragment_landing" />
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.myapplication.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/addAdFragment"
+        android:name="com.example.myapplication.AddAdFragment"
+        android:label="fragment_add_ad"
+        tools:layout="@layout/fragment_add_ad" />
+    <fragment
+        android:id="@+id/chatFragment"
+        android:name="com.example.myapplication.ChatFragment"
+        android:label="fragment_chat"
+        tools:layout="@layout/fragment_chat" />
+    <fragment
+        android:id="@+id/myGomyabFragment"
+        android:name="com.example.myapplication.MyGomyabFragment"
+        android:label="fragment_my_gomyab"
+        tools:layout="@layout/fragment_my_gomyab" />
+</navigation>
