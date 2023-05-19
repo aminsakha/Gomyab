@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/myGomyabFragment2"
+        android:icon="@drawable/baseline_my_account_box_24"
+        android:title="گمیاب من" />
+    <item
+        android:id="@+id/chatFragment2"
+        android:icon="@drawable/baseline_chat_24"
+        android:title="چت" />
+    <item
+        android:id="@+id/addAdFragment2"
+        android:icon="@drawable/baseline_add_circle_outline_24"
+        android:title="ثبت آگهی" />
+    <item
+        android:id="@+id/homeFragment2"
+        android:icon="@drawable/baseline_home_24"
+        android:title="خانه" />
+</menu>

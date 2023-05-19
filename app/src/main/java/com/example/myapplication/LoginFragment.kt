@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.myapplication.databinding.FragmentLoginBinding
 import com.example.myapplication.databinding.FragmentSplashBinding
+import com.example.myapplication.utils.changeFragment
 
 class LoginFragment : Fragment() {
     private var _binding: FragmentLoginBinding? = null
@@ -27,6 +28,9 @@ class LoginFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        binding.loginBTN.setOnClickListener {
+            changeFragment(binding.loginBTN, R.id.action_loginFragment_to_bottomNavActivity)
+        }
     }
 
     override fun onDestroyView() {
