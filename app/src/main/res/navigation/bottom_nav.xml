@@ -19,10 +19,19 @@
         android:id="@+id/addAdFragment2"
         android:name="com.example.myapplication.AddAdFragment"
         android:label="fragment_add_ad"
-        tools:layout="@layout/fragment_add_ad" />
+        tools:layout="@layout/fragment_add_ad" >
+        <action
+            android:id="@+id/action_addAdFragment2_to_addINfoFragment2"
+            app:destination="@id/addINfoFragment2" />
+    </fragment>
     <fragment
         android:id="@+id/myGomyabFragment2"
         android:name="com.example.myapplication.MyGomyabFragment"
         android:label="fragment_my_gomyab"
         tools:layout="@layout/fragment_my_gomyab" />
+    <fragment
+        android:id="@+id/addINfoFragment2"
+        android:name="com.example.myapplication.AddINfoFragment"
+        android:label="fragment_add_i_nfo"
+        tools:layout="@layout/fragment_add_i_nfo" />
 </navigation>

@@ -19,7 +19,7 @@ class MyGomyabFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         _binding = FragmentMyGomyabBinding.inflate(layoutInflater, container, false)
         if (container != null)
             myContext = container.context

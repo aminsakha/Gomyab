@@ -8,21 +8,21 @@
     tools:context=".AddAdFragment">
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/materialButton2"
+        android:id="@+id/finderBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:drawableEnd="@drawable/baseline_add_a_photo_24"
         android:fontFamily="@font/sans"
         android:text="ثبت آگهی به عنوان یابنده"
         android:textSize="15sp"
-        app:layout_constraintBottom_toTopOf="@+id/materialButton"
+        app:layout_constraintBottom_toTopOf="@+id/lookingForBtn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/materialButton"
+        android:id="@+id/lookingForBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:drawableEnd="@drawable/baseline_search_24"
@@ -33,6 +33,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/materialButton2" />
+        app:layout_constraintTop_toBottomOf="@+id/finderBtn" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
