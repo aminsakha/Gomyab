@@ -37,7 +37,6 @@ class LoginFragment : Fragment() {
             userName = binding.userNameTV.editText?.text.toString()
 
             lifecycleScope.launch {
-                //phoneNumber = read(binding.userNameTV.editText?.text.toString())!!
                 if (read(binding.userNameTV.editText?.text.toString()) != null && binding.pass2TV.editText?.text.toString() == read(
                         binding.userNameTV.editText?.text.toString()
                     )

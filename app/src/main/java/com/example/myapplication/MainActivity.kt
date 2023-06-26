@@ -11,7 +11,7 @@ import com.example.myapplication.db.AdInfoDb
 
 lateinit var dataStore: DataStore<Preferences>
 var db: AdInfoDb? = null
-
+var label=""
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

@@ -41,6 +41,7 @@ class SignUpFragment : Fragment() {
                     binding.idNumberTvSignUp.editText?.text.toString(),
                     binding.passTV.editText?.text.toString()
                 )
+                userName = binding.userNameTvSignUp.editText?.text.toString()
                 showSnackbar(binding.signBTN, "شما با موفقیت ثبت نام شدید")
                 changeFragment(binding.signBTN, R.id.action_signUpFragment_to_bottomNavActivity)
             }

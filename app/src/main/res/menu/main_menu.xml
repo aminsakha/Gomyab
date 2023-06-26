@@ -14,7 +14,7 @@
         android:icon="@drawable/baseline_add_circle_outline_24"
         android:title="ثبت آگهی" />
     <item
-        android:id="@+id/homeFragment2"
+        android:id="@+id/chatFragment"
         android:icon="@drawable/baseline_home_24"
-        android:title="خانه" />
+        android:title="چت" />
 </menu>

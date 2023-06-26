@@ -16,3 +16,4 @@ suspend fun read(key: String): String? {
     val preferences = dataStore.data.first()
     return preferences[dataStoreKey]
 }
+var userName="MyTest"

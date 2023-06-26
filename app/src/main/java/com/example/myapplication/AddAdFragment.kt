@@ -28,9 +28,11 @@ class AddAdFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding.lookingForBtn.setOnClickListener {
+            label = "گم کرده"
             changeFragment(binding.lookingForBtn, R.id.action_addAdFragment2_to_addINfoFragment2)
         }
         binding.finderBtn.setOnClickListener {
+            label = "پیدا کرده"
             changeFragment(binding.lookingForBtn, R.id.action_addAdFragment2_to_addINfoFragment2)
         }
     }

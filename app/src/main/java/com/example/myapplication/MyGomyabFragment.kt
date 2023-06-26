@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.myapplication.databinding.FragmentLoginBinding
 import com.example.myapplication.databinding.FragmentMyGomyabBinding
+import com.example.myapplication.utils.changeFragment
 import com.example.myapplication.utils.phoneNumber
 import com.example.myapplication.utils.userName
 
@@ -31,5 +32,8 @@ class MyGomyabFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         binding.nameTV.text = userName
         binding.phoneTV.text = phoneNumber
+        binding.myAdsBtn.setOnClickListener {
+            changeFragment(view,R.id.action_myGomyabFragment2_to_myAdsFragment)
+        }
     }
 }

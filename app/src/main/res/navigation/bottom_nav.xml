@@ -11,7 +11,7 @@
         android:label="fragment_chat"
         tools:layout="@layout/fragment_chat" />
     <fragment
-        android:id="@+id/homeFragment2"
+        android:id="@+id/chatFragment"
         android:name="com.example.myapplication.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" />
@@ -28,10 +28,32 @@
         android:id="@+id/myGomyabFragment2"
         android:name="com.example.myapplication.MyGomyabFragment"
         android:label="fragment_my_gomyab"
-        tools:layout="@layout/fragment_my_gomyab" />
+        tools:layout="@layout/fragment_my_gomyab" >
+        <action
+            android:id="@+id/action_myGomyabFragment2_to_myAdsFragment"
+            app:destination="@id/myAdsFragment" />
+    </fragment>
     <fragment
         android:id="@+id/addINfoFragment2"
         android:name="com.example.myapplication.AddINfoFragment"
         android:label="fragment_add_i_nfo"
-        tools:layout="@layout/fragment_add_i_nfo" />
+        tools:layout="@layout/fragment_add_i_nfo" >
+        <action
+            android:id="@+id/action_addINfoFragment2_to_addAdFragment2"
+            app:destination="@id/addAdFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/myAdsFragment"
+        android:name="com.example.myapplication.MyAdsFragment"
+        android:label="fragment_my_ads"
+        tools:layout="@layout/fragment_my_ads" >
+        <action
+            android:id="@+id/action_myAdsFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.example.myapplication.DetailFragment"
+        android:label="fragment_detail"
+        tools:layout="@layout/fragment_detail" />
 </navigation>

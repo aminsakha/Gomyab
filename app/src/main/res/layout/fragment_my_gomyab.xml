@@ -76,13 +76,13 @@
         android:textAlignment="viewEnd"
         android:textColor="@color/black"
         android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/b2"
-        app:layout_constraintEnd_toEndOf="@+id/b2"
+        app:layout_constraintBottom_toTopOf="@+id/myAdsBtn"
+        app:layout_constraintEnd_toEndOf="@+id/myAdsBtn"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="@+id/b2" />
+        app:layout_constraintStart_toStartOf="@+id/myAdsBtn" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/b2"
+        android:id="@+id/myAdsBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/white"
@@ -120,7 +120,7 @@
         android:backgroundTint="@color/white"
         android:drawableEnd="@drawable/baseline_add_a_photo_24"
         android:fontFamily="@font/sans"
-        android:text="درباره ما (راهنمایی و شرایط)"
+        android:text="درباره ما"
         android:textAlignment="viewEnd"
         android:textColor="@color/black"
         android:textSize="18sp"

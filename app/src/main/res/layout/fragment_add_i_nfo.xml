@@ -14,10 +14,12 @@
         android:layout_marginEnd="8dp"
         android:src="@drawable/banner"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ScrollView
+        android:id="@+id/scv"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -26,6 +28,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView6">
 
         <LinearLayout
+            android:id="@+id/linl"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
@@ -161,11 +164,11 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="end"
                 android:layout_marginEnd="30dp"
-                android:text="گواهی نامه"
                 android:button="@null"
                 android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
                 android:drawablePadding="1dp"
                 android:gravity="fill"
+                android:text="گواهی نامه"
                 android:textSize="20sp" />
 
             <CheckBox
@@ -175,10 +178,10 @@
                 android:layout_gravity="end"
                 android:layout_marginEnd="30dp"
                 android:button="@null"
-                android:text="کارت سوخت"
                 android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
                 android:drawablePadding="1dp"
                 android:gravity="fill"
+                android:text="کارت سوخت"
                 android:textSize="20sp" />
 
             <CheckBox
@@ -186,24 +189,24 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="end"
+                android:layout_marginEnd="30dp"
                 android:button="@null"
                 android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
                 android:drawablePadding="1dp"
                 android:gravity="fill"
-                android:layout_marginEnd="30dp"
                 android:text="اسناد مالکیت"
                 android:textSize="20sp" />
 
             <CheckBox
                 android:id="@+id/parvanehVaGovahi"
                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginEnd="30dp"
                 android:button="@null"
                 android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
                 android:drawablePadding="1dp"
                 android:gravity="fill"
-                android:layout_height="wrap_content"
-                android:layout_gravity="end"
-                android:layout_marginEnd="30dp"
                 android:text="پروانه و گواهی"
                 android:textSize="20sp" />
 
@@ -212,11 +215,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="end"
+                android:layout_marginEnd="30dp"
                 android:button="@null"
                 android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
                 android:drawablePadding="1dp"
                 android:gravity="fill"
-                android:layout_marginEnd="30dp"
                 android:text="وکالت نامه"
                 android:textSize="20sp" />
 
@@ -238,11 +241,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="end"
+                android:layout_marginEnd="30dp"
                 android:button="@null"
                 android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
                 android:drawablePadding="1dp"
                 android:gravity="fill"
-                android:layout_marginEnd="30dp"
                 android:text="دسته چک،برگه چک بانکی"
                 android:textSize="20sp" />
 
@@ -252,11 +255,11 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="end"
                 android:layout_marginEnd="30dp"
-                android:text="کارت عابربانک"
                 android:button="@null"
                 android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
                 android:drawablePadding="1dp"
                 android:gravity="fill"
+                android:text="کارت عابربانک"
                 android:textSize="20sp" />
 
             <CheckBox
@@ -279,10 +282,10 @@
                 android:layout_gravity="end"
                 android:layout_marginEnd="30dp"
                 android:button="@null"
-                android:text="کارت سوخت"
                 android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
                 android:drawablePadding="1dp"
                 android:gravity="fill"
+                android:text="کارت سوخت"
                 android:textSize="20sp" />
 
             <CheckBox
@@ -307,6 +310,36 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="5dp"
                 android:hint="توضیحات"
+                android:padding="20dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sans"
+                    android:textSize="16sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <CheckBox
+                android:id="@+id/moj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginEnd="30dp"
+                android:button="@null"
+                android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                android:drawablePadding="1dp"
+                android:gravity="fill"
+                android:text="مژدگانی"
+                android:textSize="20sp" />
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/mojTB"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="5dp"
+                android:hint="مبلغ مژدگانی"
                 android:padding="20dp">
 
                 <com.google.android.material.textfield.TextInputEditText
